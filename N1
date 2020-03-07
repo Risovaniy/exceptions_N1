@@ -1,0 +1,16 @@
+def counting(expression):
+    signs = expression.split(' ')
+    if signs[0] == '+':
+        return float(signs[1]) + float(signs[2])
+    elif signs[0] == '-':
+        return float(signs[1]) - float(signs[2])
+    elif signs[0] == '*':
+        return float(signs[1]) * float(signs[2])
+    else:
+        return float(signs[1]) / float(signs[2])
+
+
+expression = input('Введите выражение для счета\n')
+result = counting(expression)
+
+print(result)
